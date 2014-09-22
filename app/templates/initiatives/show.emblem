@@ -1,7 +1,0 @@
-.title
-  h2
-    model.title
-
-.description
-  p
-    model.description

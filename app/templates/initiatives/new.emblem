@@ -1,4 +1,18 @@
-form-for model
+form-for controller
+  = input issue_title
+  if view.showError
+    error-field issue_title
+
+  = input issue_description as="text"
+  if view.showError
+    error-field issue_description
+
   = input title
+  if view.showError
+    error-field title
+
   = input description as="text"
-  = submit 
+  if view.showError
+    error-field description
+
+  = submit disabled=isInvalid
